@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sara 💗</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #e8c8ff, #ffc2dc);
+    overflow-x: hidden;
+    color: #a51d64;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    bottom: -50px;
+    font-size: 24px;
+    animation: floatUp linear infinite;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% { opacity: 0.8; }
+    100% {
+        transform: translateY(-115vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    padding: 45px 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.76);
+    border: 2px solid white;
+    border-radius: 30px;
+    box-shadow: 0 15px 45px rgba(180, 57, 123, 0.2);
+    backdrop-filter: blur(10px);
+    animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.crown {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: clamp(30px, 7vw, 48px);
+    color: #e83e8c;
+    margin-bottom: 15px;
+    text-shadow: 2px 3px 10px #ffc0df;
+}
+
+.subtitle {
+    color: #9d4b86;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+button {
+    background: linear-gradient(135deg, #ff4f9a, #c44dce);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 7px 20px rgba(216, 65, 149, 0.35);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 28px rgba(216, 65, 149, 0.5);
+}
+
+#surprise {
+    display: none;
+    animation: reveal 1.2s ease;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    font-size: 16px;
+    line-height: 2;
+    color: #804267;
+    margin: 22px 0;
+}
+
+.highlight {
+    color: #e83e8c;
+    font-weight: bold;
+}
+
+.divider {
+    color: #f05a9d;
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin: 18px 0;
+}
+
+.signature {
+    font-size: 23px;
+    color: #c044a2;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.footer {
+    font-size: 13px;
+    color: #b66b9a;
+    margin-top: 25px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<div class="container">
+    <div class="card">
+
+        <div class="crown">👑💗👑</div>
+
+        <div id="welcome">
+            <h1>Hey Sara! 💕</h1>
+
+            <p class="subtitle">
+                Someone special has a little surprise for you... 🎀<br>
+                A little gift filled with love, memories,<br>
+                and a thousand hearts! 💖
+            </p>
+
+            <button onclick="openSurprise()">
+                CLICK HERE 💌
+            </button>
+
+            <p class="footer">
+                Made with love, just for you ♡
+            </p>
+        </div>
+
+        <div id="surprise">
+
+            <div class="crown">🎂🎀💖🎀🎂</div>
+
+            <h1>Happy Birthday, Sara! 💗</h1>
+
+            <p class="subtitle">
+                ✨ 23 December 2026 — Your Special Day ✨
+            </p>
+
+            <div class="divider">♡ ♡ ♡</div>
+
+            <div class="message">
+                <p>Dear <span class="highlight">Sara</span>, 💕</p>
+
+                <p>
+                    Happy Birthday to my childhood friend! 🎂💗
+                </p>
+
+                <p>
+                    Can you believe we've been friends since childhood?
+                    🥹💕.We got seperated for almost 8 years and then we met again in Academy.
+                </p>
+
+                <p>
+                    You're not just a friend to me;
+                    you are the one I trusted.
+                    I'm so grateful that our friendship has been
+                    a part of my story since the beginning. 💞
+                </p>
+
+                <p>
+                    On your special day, I wish you endless happiness,
+                    beautiful surprises, success in everything you do,
+                    and a heart that always finds reasons to smile. 🌷✨
+                </p>
+
+                <p>
+                    May all your dreams come closer to reality,
+                    may your days be filled with laughter,
+                    and may this new chapter of your life
+                    be as wonderful as you are! 🦋💖
+                </p>
+
+                <p>
+                    No matter how much we grow up,
+                    I hope we always keep our childhood friendship
+                    alive, with the same love, trust, and memories. 🫶
+                </p>
+
+                <p class="highlight">
+                    You deserve all the happiness in the world, Sara! 💝
+                </p>
+            </div>
+
+            <div class="divider">💗 ♡ 💗 ♡ 💗</div>
+
+            <h2 style="color:#e83e8c; font-size:25px;">
+                Stay happy, stay blessed! 🌸
+            </h2>
+
+            <p class="signature">
+                With lots of love,<br>
+                Your childhood friend, 💌
+            </p>
+
+            <p style="font-size:28px; margin-top:20px;">
+                💖 💕 💗 💓 💞
+            </p>
+
+            <button onclick="moreLove()" style="margin-top:25px;">
+                SEND MORE LOVE 💝
+            </button>
+
+            <p id="extra" class="footer"></p>
+
+            <p class="footer">
+                A little website for a friendship that means a lot. ♡
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+/* Create floating hearts */
+const heartContainer = document.getElementById("hearts");
+const heartSymbols = ["💗", "💕", "💖", "💘", "♡", "💞", "🌸"];
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.textContent =
+        heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 22) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 6) + "s";
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 11000);
+}
+
+setInterval(createHeart, 350);
+
+/* Open birthday surprise */
+function openSurprise() {
+    document.getElementById("welcome").classList.add("hidden");
+    document.getElementById("surprise").style.display = "block";
+
+    // Make hearts appear as a special celebration
+    for (let i = 0; i < 35; i++) {
+        setTimeout(createHeart, i * 70);
+    }
+}
+
+/* Extra love button */
+function moreLove() {
+    document.getElementById("extra").textContent =
+        "Sara, here's a million virtual hugs and hearts! 💗🫶 " +
+        "Happy Birthday once again! 🎂💕";
+
+    for (let i = 0; i < 45; i++) {
+        setTimeout(createHeart, i * 50);
+    }
+}
+</script>
+
+</body>
+</html>
